@@ -1,1 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta name="google-site-verification" content="XXXX" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gökçen Büke | Eskişehir Web Tasarım</title>
+‎<meta name="description" content="Gökçen Büke Eskişehir'de freelance web tasarım hizmeti verir. Modern, hızlı ve mobil uyumlu web siteleri.">
+‎<meta name="keywords" content="Eskişehir web tasarım, freelancer, site yapımı, web tasarımcı">
+‎<meta name="author" content="Gökçen Büke">
+‎
+‎<!-- GOOGLE DOĞRULAMA (Search Console'dan alıp buraya yapıştıracaksın) -->
+‎<meta name="google-site-verification" content="BURAYA_KOD_GELECEK" />
+‎
+‎<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#111;
+  color:#333;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(10px);
+  color:white;
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+nav a:hover{
+  border-bottom:2px solid white;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  background:linear-gradient(135deg,#111,#333);
+  text-align:center;
+}
+
+.hero h1{
+  font-size:40px;
+}
+
+.hero p{
+  margin-top:10px;
+}
+
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  background:white;
+  color:black;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+  min-height:100vh;
+  padding:100px 20px;
+  text-align:center;
+}
+
+.about{background:#cceeff;}
+.projects{background:#f5d0d0;}
+.services{background:#ffe4b5;}
+.packages{background:#e6d6ff;}
+.contact{background:#d4f5d0;}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  transition:0.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* IMAGE */
+img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* FORM */
+input,textarea{
+  width:80%;
+  margin:10px;
+  padding:10px;
+  border-radius:8px;
+  border:none;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  background:black;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  font-size:25px;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  background:black;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Web Köşesi</h2>
+  <div>
+    <a href="#about">Hakkımda</a>
+    <a href="#projects">Projeler</a>
+    <a href="#services">Hizmetler</a>
+    <a href="#packages">Paketler</a>
+    <a href="#contact">İletişim</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Modern Web Siteleri Tasarlıyorum</h1>
+  <p>Hızlı, şık ve mobil uyumlu web tasarım</p>
+  <a href="#contact" class="btn">Benimle Çalış</a>
+</section>
+
+<!-- HAKKIMDA -->
+<section class="about" id="about">
+  <h1>Gökçen Büke</h1>
+  <p>Eskişehir'de freelance web tasarım hizmeti veriyorum. 
+    Modern, hızlı ve mobil uyumlu web siteleri tasarlıyorum. 
+    Web sitenizi profesyonel şekilde hazırlamak için benimle iletişime geçebilirsiniz.
+ </p>
+ 
+ <h2>Eskişehir'de Web Tasarım Hizmeti</h2>
+<p>Profesyonel web sitesi tasarımı ve geliştirme hizmetleri sunuyorum.</p>
+</section>
+
+<!-- PROJELER -->
+<section class="projects" id="projects">
+  <h1>Projelerim</h1>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200">
+      <h3>Portfolio Site</h3>
+      <p>HTML + CSS modern tasarım</p>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/301/200">
+      <h3>Blog Tasarım</h3>
+      <p>Minimal ve hızlı blog</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- HİZMETLER -->
+<section class="services" id="services">
+  <h1>Hizmetlerim</h1>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Web Tasarım</h3>
+      <p>Sıfırdan modern site</p>
+    </div>
+
+    <div class="card">
+      <h3>Mobil Uyum</h3>
+      <p>Tüm cihazlarda uyum</p>
+    </div>
+
+    <div class="card">
+      <h3>Hız Optimizasyonu</h3>
+      <p>Hızlı açılan siteler</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PAKETLER -->
+<section class="packages" id="packages">
+  <h1>Paketler</h1>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Başlangıç</h3>
+      <p>Tek sayfa site</p>
+      <strong>₺1000</strong>
+    </div>
+
+    <div class="card">
+      <h3>Orta</h3>
+      <p>3 sayfa site</p>
+      <strong>₺2500</strong>
+    </div>
+
+    <div class="card">
+      <h3>Profesyonel</h3>
+      <p>Tam site + animasyon</p>
+      <strong>₺5000</strong>
+    </div>
+
+  </div>
+</section>
+
+<!-- İLETİŞİM -->
+<section class="contact" id="contact">
+  <h1>İletişim</h1>
+
+  <form action="https://formspree.io/f/xpwqpbbe" method="POST">
+    <input type="text" name="name" placeholder="Adınız" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <textarea name="message" placeholder="Mesajınız" required></textarea><br>
+    <button type="submit">Gönder</button>
+  </form>
+
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:gokcenbuke1626@gmail.com">
+      gokcenbuke1626@gmail.com
+    </a>
+  </p>
+
+  <a href="https://wa.me/905015819126?text=Merhaba%20Gökçen%20Hanım" target="_blank" class="whatsapp">💬</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Gökçen Büke - Tüm hakları saklıdır</p>
+</footer>
+
+</body>
+  </html>
